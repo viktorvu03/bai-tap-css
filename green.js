@@ -47,12 +47,7 @@ function updateScrollButtonsGreen() {
   scrollLeftButtonGreen.style.display = isFullyVisibleGreen || isScrolledToLeftGreen ? "none" : "block";
   scrollRightButtonGreen.style.display = isFullyVisibleGreen || isScrolledToRightGreen ? "none" : "block";
 
-  if (scrollLeftButtonGreen.style.display === "block"||scrollRightButtonGreen.style.display === "block") {
-    const paragraph = document.querySelector('p');
-    if (paragraph) {
-        paragraph.classList.add('larger-text');  // Thêm class vào thẻ <p>
-    }
-}
+ 
 }
 
 // Cập nhật hiển thị nút cuộn khi cuộn hoặc thay đổi kích thước
