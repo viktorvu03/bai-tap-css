@@ -1,0 +1,264 @@
+.container2 {
+    background-color: #EDFAFE;
+    padding: 24px;
+    border-radius: 48px;
+    margin: 0 100px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+#pink {
+    background-color: #FFF8FB;
+}
+
+#pink .title p {
+    color: #FD71AF;
+}
+
+#green {
+    background-color: #F0FBF8;
+}
+
+#green .title p {
+    color: #00B884;
+}
+
+.grid-content-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-content-item {
+    padding: 0;
+}
+
+.grid-content-item h3 {
+    margin-left: 5%;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.grid-content-item p {
+    margin-left: 5%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.card .title {
+    text-align: center;
+}
+
+.title h3 {
+    color: #212B36;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.title p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #49CCF9;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.tag-content {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.tag-content-green {
+    
+    margin-left: 3%;
+    overflow: hidden;
+}
+
+.tag-content-pink {
+   
+    margin-left: 3%;
+    overflow: hidden;
+}
+
+
+
+.unselected {
+    color: grey;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+.part {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-bottom: 25px;
+}
+
+.square-shape img {
+    width: 30px;
+    height: 30px;
+}
+
+.square-shape {
+    height: fit-content;
+    border: 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: #919EAB33 0px 0px 2px 0px, #919EAB1F 0px 12px 24px -4px;
+    border-radius: 16px;
+}
+
+.part-details p {
+    margin: 0 12px 10px 12px;
+}
+
+.part-details p:nth-child(1) {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+video {
+    height: auto;
+    width: 100%;
+}
+
+.early-access button {
+    background-color: #49CCF9;
+   
+}
+
+.early-access-pink button {
+    background-color: #FD71AF;
+ 
+}
+
+.early-access-green button {
+    background-color: #00B884;
+
+}
+
+.early-access button,
+.early-access-green button,
+.early-access-pink button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 3%;
+}
+
+
+
+.tag-content button {
+    min-width: 100px;
+    border-bottom: 2px solid #49CCF9;
+}
+
+.tag-content-pink button,
+.tag-content button,
+.tag-content-green button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 0.875rem;
+    padding: 5px 15px;
+}
+
+.tag-content-pink button {
+    min-width: 170px;
+    border-bottom: 2px solid #FD71AF;
+}
+
+.tag-content-green button {
+    min-width: 150px;
+    border-bottom: 2px solid #00B884;
+}
+
+.video {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .grid-content-container {
+        grid-template-columns: 100%;
+    }
+
+    .grid-content-item:nth-child(1) {
+        order: 2;
+    }
+
+    .grid-content-item:nth-child(2) {
+        order: 1;
+    }
+
+    .part {
+        margin-left: 0;
+    }
+
+    .tag-content, .tag-content-green, .tag-content-pink {
+        display: flex;
+        justify-content: left;
+    }
+}
+
+@media (min-width: 700px) {
+    button.scroll-left,
+    button.scroll-right,
+    button.scroll-left-green,
+    button.scroll-right-green,
+    button.scroll-left-pink,
+    button.scroll-right-pink {
+        display: none;
+    }
+    .tag-content-list, .tag-content-list-green, .tag-content-list-pink {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 700px) {
+    .tag-content-list, .tag-content-list-green, .tag-content-list-pink {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+button.scroll-left,
+button.scroll-right,
+button.scroll-left-green,
+button.scroll-right-green,
+button.scroll-left-pink,
+button.scroll-right-pink {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: #666666;
+}
+
+@media (max-width:700px) {
+    .container2 {
+    
+    
+    margin: 0px;
+   
+    }
+}

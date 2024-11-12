@@ -1,0 +1,44 @@
+.partner-carousel-container {
+    background-color: transparent;
+    margin: 5% 4%;
+}
+
+.partner-carousel-container .partner-title h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.partner-carousel-container .partner-title p {
+    text-align: center;
+    color: rgb(99, 115, 129);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 24px 0 0;
+}
+
+.partner-carousel-content {
+    overflow: hidden;
+    position: relative;
+    margin-top: 40px;
+}
+
+.partner-track {
+    display: flex;
+    animation: scroll 10s linear infinite; 
+}
+
+.partner-logo {
+    flex: 0 0 auto; 
+    margin: 0 1%; 
+}
+
+.partner-logo img {
+    height: 120px;
+    width: auto;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

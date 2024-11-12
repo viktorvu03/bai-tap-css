@@ -1,0 +1,116 @@
+
+.container3 {
+    padding: 24px;
+    border-radius: 48px;
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    text-align: center;
+}
+
+.quote-container {
+    margin-bottom: 20px;
+}
+
+.quote-sign{
+    width: 48px;
+    height: 48px;
+}
+
+.quote {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.name {
+    font-weight: bold;
+    color: #555;
+}
+
+.title {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.avatar-scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-testimonital
+
+.avatar-scroll {
+    flex:1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    height: 200px;
+    
+}
+
+.avatar {
+    width: 50px;
+    height: 100px;
+    margin: 0 15px;
+   
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: scrollAvatars 3s linear infinite; 
+}
+
+.avatar.active {
+    transform: scale(2);
+    opacity: 1;
+}
+
+
+.avatar-scroll img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.grid-button{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.prev, .next {
+    display: inline-block; 
+    width: auto;                        
+    border: none;                 
+    cursor: pointer;         
+    font-size: 30px;
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+   .prev,.next{
+    display: none;
+   }
+   .container3 {
+    
+    grid-template-columns: 100%;
+   
+}
+}
+
+@media (max-width:700px) {
+    .container3 {
+    
+    
+    margin: 0px;
+   
+    }
+}
+
