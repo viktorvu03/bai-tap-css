@@ -74,13 +74,13 @@
 }
 
 .tag-content-green {
-    
+
     margin-left: 3%;
     overflow: hidden;
 }
 
 .tag-content-pink {
-   
+
     margin-left: 3%;
     overflow: hidden;
 }
@@ -132,12 +132,12 @@ video {
 
 .early-access button {
     background-color: #49CCF9;
-   
+
 }
 
 .early-access-pink button {
     background-color: #FD71AF;
- 
+
 }
 
 .early-access-green button {
@@ -150,7 +150,7 @@ video {
 .early-access-pink button {
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 16px;
     padding: 8px 16px;
     font-size: 1em;
     font-weight: bold;
@@ -168,7 +168,7 @@ video {
 
 .tag-content-pink button,
 .tag-content button,
-.tag-content-green button{
+.tag-content-green button {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -210,13 +210,27 @@ video {
         margin-left: 0;
     }
 
-    .tag-content, .tag-content-green, .tag-content-pink {
+    .tag-content,
+    .tag-content-green,
+    .tag-content-pink {
         display: flex;
         justify-content: left;
     }
+
+    .early-access,
+    .early-access-green,
+    .early-access-pink {
+        margin-top: 24px;
+    }
+
+    .video{
+        padding: 12px 0px;
+    }
+
 }
 
 @media (min-width: 700px) {
+
     button.scroll-left,
     button.scroll-right,
     button.scroll-left-green,
@@ -225,19 +239,19 @@ video {
     button.scroll-right-pink {
         display: none;
     }
-    .tag-content-list, .tag-content-list-green, .tag-content-list-pink {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 }
 
 @media (max-width: 700px) {
-    .tag-content-list, .tag-content-list-green, .tag-content-list-pink {
+
+    .tag-content-list,
+    .tag-content-list-green,
+    .tag-content-list-pink {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+
+
 }
 
 button.scroll-left,
@@ -256,9 +270,7 @@ button.scroll-right-pink {
 
 @media (max-width:700px) {
     .container2 {
-    
-    
-    margin: 0px;
-   
+        margin: 30px 16px;
+
     }
 }

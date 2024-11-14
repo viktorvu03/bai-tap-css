@@ -1,7 +1,7 @@
 function handleTagClick(event) {
   const selectedTag = event.target;
   const contentDiv = document.querySelector(".content-green");
-  
+
   // Cập nhật giao diện thẻ được chọn
   document.querySelectorAll(".tag-content-green button").forEach(tag => {
     tag.style.borderBottom = tag === selectedTag ? "2px solid rgb(0, 184, 132)" : "none";
@@ -47,7 +47,7 @@ function updateScrollButtonsGreen() {
   scrollLeftButtonGreen.style.display = isFullyVisibleGreen || isScrolledToLeftGreen ? "none" : "block";
   scrollRightButtonGreen.style.display = isFullyVisibleGreen || isScrolledToRightGreen ? "none" : "block";
 
- 
+
 }
 
 // Cập nhật hiển thị nút cuộn khi cuộn hoặc thay đổi kích thước

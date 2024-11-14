@@ -42,7 +42,7 @@ function handleTagClick(event) {
   function updateScrollButtonsPink() {
     const isFullyVisiblePink = tagContentPink.scrollWidth <= tagContentPink.clientWidth;
     const isScrolledToLeftPink = tagContentPink.scrollLeft === 0;
-    const isScrolledToRightPink = tagContentPink.scrollLeft + tagContentPink.clientWidth >= tagContentPink.scrollWidth ;
+    const isScrolledToRightPink = tagContentPink.scrollLeft + tagContentPink.clientWidth >= tagContentPink.scrollWidth -50 ;
   
     scrollLeftButtonPink.style.display = isFullyVisiblePink || isScrolledToLeftPink ? 'none' : 'block';
     scrollRightButtonPink.style.display = isFullyVisiblePink || isScrolledToRightPink ? 'none' : 'block';

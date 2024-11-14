@@ -23,7 +23,7 @@ section {
     width: calc(100% - 200px);
     box-sizing: border-box;
     padding: 0px 24px;
-    margin: 0 100px;
+    margin:0px 100px 50px 100px;
 }
 
 .round-shape {
@@ -135,6 +135,7 @@ section {
     .hidden {
         display: none;
     }
+
     .h2s {
         width: 100%;
         box-sizing: border-box;
@@ -144,11 +145,10 @@ section {
 
 
 @media (max-width:700px) {
-    
+
     section {
         width: 100%;
-    margin: 0px;
-   
+        margin: 0px;
+
     }
 }
-

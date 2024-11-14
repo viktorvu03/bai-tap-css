@@ -1,5 +1,3 @@
-
-
 .register {
     background-color: rgb(254, 233, 209);
     padding: 10px 0;
@@ -8,7 +6,6 @@
 .register-grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
-
 }
 
 
@@ -51,7 +48,8 @@ form img {
     left: 3%;
 }
 
-form input {
+form input,
+form button {
     border: 1px solid rgb(229, 229, 229);
     display: block;
     box-sizing: border-box;
@@ -85,7 +83,7 @@ form input:hover {
     border: 0;
 }
 
-.submit-button input {
+.submit-button button {
     text-align: center;
     color: white;
     font-weight: 600;
@@ -95,21 +93,39 @@ form input:hover {
     background-color: rgb(105, 108, 255);
 }
 
-.submit-button input:hover {
+.submit-button button:hover {
     border: 0;
     background-color: #1939B7;
     cursor: pointer;
 }
 
-@media (max-width: 900px) { 
-    .register-grid-item:nth-of-type(2) img {
-        display: none; 
+@media (max-width: 900px) {
+    .register-grid-item{
+        padding: 20px;
+        box-sizing: border-box;
     }
-    
+
+    .register-grid-item:nth-of-type(2) {
+        display: none;
+    }
+
     .register-grid-container {
         grid-template-columns: 100% 0%;
     }
+
     .form {
         margin-left: 0;
     }
+
+    .form input
+    {
+        width: 70%;
+    };
+}
+
+@media (max-width: 700px) {
+    .form input
+    {
+        width: 100%;
+    };
 }

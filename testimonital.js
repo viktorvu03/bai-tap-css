@@ -91,7 +91,7 @@ function scrollLeft() {
         currentIndex = (currentIndex + 1) % testimonials.length;
         updateTestimonial(currentIndex);
         updateActiveAvatar();
-    }, 0.5); 
+    }, 0.5);
 }
 
 // Sự kiện cho nút chuyển slide phải
@@ -103,7 +103,7 @@ function scrollRight() {
         currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
         updateTestimonial(currentIndex);
         updateActiveAvatar();
-    }, 0.5); 
+    }, 0.5);
 }
 
 prevButton.addEventListener('click', () => {
@@ -131,8 +131,8 @@ avatarScroll.addEventListener('click', (e) => {
         currentIndex = (currentIndex + (selectedIndex - 2) + testimonials.length) % testimonials.length;
         adjustAvatarsToCenter(selectedIndex);
         updateTestimonial(currentIndex);
-        
-        updateActiveAvatar();   
+
+        updateActiveAvatar();
     }
 });
 
