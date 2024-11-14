@@ -227,6 +227,9 @@ video {
         padding: 12px 0px;
     }
 
+    .container2 h3{
+        margin-bottom: 12px;
+    }
 }
 
 @media (min-width: 700px) {
